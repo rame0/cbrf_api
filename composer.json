@@ -1,0 +1,38 @@
+{
+  "name": "rame0/cbrf_exchange_rates",
+  "type": "library",
+  "description": "CBRF API implementation",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "rame0",
+      "email": "r@me0.biz",
+      "homepage": "https://github.com/rame0"
+    }
+  ],
+  "keywords": [
+    "cbrf",
+    "currency",
+    "exchange rate",
+    "cbr.ru"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "ext-simplexml": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "rame0\\API\\CBRF\\": "lib/API/CBRF"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "rame0\\API\\CBRF\\Tests\\": "tests/API/CBRF"
+    }
+  }
+}
